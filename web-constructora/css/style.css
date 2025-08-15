@@ -1,0 +1,278 @@
+.img-fluid {
+  max-height: 500px; /* controla la altura máxima */
+  width: 450px;       /* mantiene la proporción */
+}
+
+/* Ajuste general de las imágenes del carrusel */
+#qsCarousel .carousel-item img {
+  height: 450px;           /* Altura fija del carrusel */
+  object-fit: cover;       /* Recorta la imagen sin deformarla */
+  object-position: center; /* Centra el recorte */
+}
+
+/* Opcional: borde redondeado en las imágenes */
+#qsCarousel .carousel-item img {
+  border-radius: 8px;
+}
+
+/* Ajuste en pantallas pequeñas */
+@media (max-width: 768px) {
+  #qsCarousel .carousel-item img {
+    height: 280px; /* Menor altura en móviles */
+  }
+}
+
+
+/* ====== Servicios ====== */
+.service-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.service-card img {
+  width: 100%;
+  /* Cambia la relación si lo necesitas: 16/9, 1/1, 3/4, etc. */
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .5s ease;
+  display: block;
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+}
+
+.service-overlay {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 12px 14px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 100%);
+  color: #fff;
+}
+
+#serviceFilters .btn {
+  border-radius: 999px;
+  padding: .45rem 1rem;
+}
+
+#serviceFilters .btn.active,
+#serviceFilters .btn:focus {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+
+@media (max-width: 576px) {
+  .service-card img { aspect-ratio: 1 / 1; } /* cuadrado en móvil (opcional) */
+}
+/* Variante para fotos más verticales si alguna se corta mucho */
+.service-card.tall img { aspect-ratio: 3 / 4; }
+
+  /* Asegura que el fondo cubra toda la página */
+html, body { height: 100%; margin: 0; }
+
+/* Fondo con imagen + tono (overlay) en una sola propiedad */
+body{
+  background-image:
+    linear-gradient(rgba(18,18,18,.55), rgba(18,18,18,.55)), /* tono */
+    url("../img/fondo-nuevo.png");                                 /* <-- ruta corregida */
+  background-repeat: repeat, repeat;
+  background-size: 280px, 280px;   /* ajusta el tamaño del patrón */
+  background-attachment: fixed, fixed;
+}
+
+/* Quita fondos sólidos de utilidades de Bootstrap que tapan el patrón */
+.bg-light,
+.bg-body,
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+
+/* Si tu navbar o secciones tienen otra clase de fondo, también puedes forzar: */
+.navbar { background-color: transparent !important; }
+section { background-color: transparent; }
+
+/* Asegura que los títulos y párrafos tengan color más oscuro */
+/* Títulos principales */
+h1 {
+  font-size: 3rem; /* tamaño grande */
+  font-weight: 800; /* negrita extra */
+  color: #111 !important; /* negro fuerte */
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.6); /* sombra clara para resaltar sobre fondo oscuro o claro */
+}
+
+/* Subtítulos */
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #222 !important;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+/* Párrafos */
+p {
+  font-size: 1.25rem; /* más grande que el normal */
+  line-height: 1.6; /* más espacio entre líneas */
+  color: #222 !important;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
+}
+
+/* Botón */
+button, .btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.hero-subtitle {
+  font-size: 3rem; /* gigante */
+  font-weight: 800;
+  color: #000;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+}
+
+p.lead {
+  font-size: 1.8rem; /* Tamaño intermedio equilibrado */
+  font-weight: 600;
+  color: #000;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8); /* Un contorno suave */
+  line-height: 1.5;
+}
+
+
+#servicios p.text-muted {
+  color: #fff !important; /* Texto blanco */
+  font-weight: 600;       /* Más grueso */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Sombra para que resalte */
+  font-size: 1.2rem;      /* Un poco más grande */
+}
+
+#servicios h2 {
+  color: #fff !important;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+
+#serviceFilters .btn {
+  color: #fff !important; /* Texto blanco */
+  font-weight: 600;        /* Más grueso */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Sombra para contraste */
+}
+
+#serviceFilters .btn.active,
+#serviceFilters .btn:focus {
+  background-color: #000 !important; /* Fondo negro para el activo */
+  color: #fff !important;
+  border-color: #000 !important;
+}
+
+
+/* Título */
+.social-title{
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  margin-bottom: .75rem;
+  color: #111;
+}
+
+/* Fondo claro detrás de los botones para que se lean sobre cualquier patrón */
+.social-wrapper{
+  background: rgba(255,255,255,.92);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.06);
+}
+
+/* Contenedor de botones */
+.social-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Botón base (independiente de Bootstrap) */
+.social-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 18px;
+  border-radius: 9999px;
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none;
+  border: 0;
+  box-shadow: 0 4px 14px rgba(0,0,0,.12);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+.social-btn .bi{ font-size: 1.25rem; line-height: 0; }
+.social-btn:hover{ transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.16); filter: brightness(1.03); }
+.social-btn:focus-visible{ outline: 3px solid rgba(255,255,255,.85); outline-offset: 2px; }
+
+/* Colores de marca */
+.social-btn.wa{ background:#25D366; }
+.social-btn.ig{ background:#E4405F; }
+.social-btn.tk{ background:#010101; }
+.social-btn.fb{ background:#1877F2; }
+
+/* Responsivo: quepan bien en móvil */
+@media (max-width: 576px){
+  .social-btn{ flex: 1 1 calc(50% - 12px); justify-content: center; }
+}
+
+
+/* ==== NAVBAR ELEGANTE ==== */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #222 !important;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  color: #444 !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8b400 !important; /* Amarillo elegante */
+}
+
+/* Línea inferior animada */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #f8b400;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Estado activo */
+.navbar-nav .nav-link.active {
+  color: #f8b400 !important;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}

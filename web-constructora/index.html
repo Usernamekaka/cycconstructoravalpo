@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>c & c constructora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#inicio">c&c</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#quienes-somos">Quienes somos</a>
+        <a class="nav-link" href="#servicios">Nuestros servicios</a>
+        <a class="nav-link" href="#contacto">Contactanos</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container my-5">
+  <div class="row align-items-center">
+    <!-- Imagen a la izquierda -->
+    <div class="col-md-6 text-center">
+      <img src="./img/IMAGEN-PRINCIPAL-C&C.png" alt="C&C Construcciones" class="img-fluid img-principal">
+    </div>
+
+    <!-- Eslogan a la derecha -->
+    <div class="col-md-6">
+      <h1 class="display-4 fw-bold">Construimos tu futuro con calidad y confianza</h1>
+    <p class="lead hero-subtitle">
+  En C&C Construcciones, cada proyecto es una obra hecha para durar.
+</p>
+
+      <a href="#servicios" class="btn btn-warning btn-lg mt-3">Conoce nuestros servicios</a>
+    </div>
+  </div>
+</div>
+
+<!-- QUIÉNES SOMOS -->
+<section id="quienes-somos" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Quiénes somos</h2>
+      <p class="text-muted mb-0">Compromiso, seguridad y calidad en cada obra.</p>
+    </div>
+
+    <div id="qsCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#qsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#qsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#qsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="./img/crsl3.jpg" class="d-block w-100 obj-cover" alt="Equipo en obra">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Equipo experto</h5>
+            <p>Profesionales dedicados a materializar tu proyecto.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./img/carrusel2.jpg" class="d-block w-100 obj-cover" alt="Control de calidad en construcción">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Calidad y seguridad</h5>
+            <p>Procesos certificados y enfoque en la seguridad.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./img/carrusel3.jpg" class="d-block w-100 obj-cover" alt="Cliente revisando planos">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Trabajo colaborativo</h5>
+            <p>Escuchamos a nuestros clientes en cada etapa.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#qsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#qsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+<!-- =====================
+     NUESTROS SERVICIOS
+===================== -->
+<section id="servicios" class="py-5">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Nuestros servicios</h2>
+      <p class="text-muted mb-0">
+        Obras civiles, remodelaciones y más, realizados con estándares de calidad.
+      </p>
+    </div>
+
+    <!-- Filtros -->
+    <ul class="nav nav-pills justify-content-center gap-2 mb-4" id="serviceFilters">
+      <li class="nav-item"><button class="btn btn-outline-dark active" data-filter="all">Todos</button></li>
+      <li class="nav-item"><button class="btn btn-outline-dark" data-filter="civiles">Obras civiles</button></li>
+      <li class="nav-item"><button class="btn btn-outline-dark" data-filter="remodelacion">Remodelación</button></li>
+      <li class="nav-item"><button class="btn btn-outline-dark" data-filter="metalica">Estructuras metálicas</button></li>
+      <li class="nav-item"><button class="btn btn-outline-dark" data-filter="pintura">Pintura</button></li>
+      <li class="nav-item"><button class="btn btn-outline-dark" data-filter="albanileria">Albañilería</button></li>
+    </ul>
+
+    <!-- Grilla de trabajos -->
+    <div class="row g-4" id="serviceGrid">
+      <!-- ======= OBRAS CIVILES ======= -->
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="civiles">
+        <article class="service-card shadow-sm">
+          <img src="./img/exterior2.jpg" alt="Revestimiento y mejoras de fachada" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Obras civiles</span>
+            <h5 class="mt-2 mb-0">Revestimiento exterior</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="civiles">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0047.jpg" alt="Vista general de faena en obra" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Obras civiles</span>
+            <h5 class="mt-2 mb-0">Vista de faena</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="civiles">
+        <article class="service-card shadow-sm">
+          <img src="./img/exterior13.jpg" alt="Fachada en madera durante la obra" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Obras civiles</span>
+            <h5 class="mt-2 mb-0">Fachada en madera</h5>
+          </div>
+        </article>
+      </div>
+
+      <!-- ======= REMODELACIÓN ======= -->
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="remodelacion">
+        <article class="service-card shadow-sm">
+          <img src="./img/interior1.jpg" alt="Remodelación interior de living" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Remodelación</span>
+            <h5 class="mt-2 mb-0">Living renovado</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="remodelacion,albanileria">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0059.jpg" alt="Baño remodelado con revestimiento cerámico" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Remodelación</span>
+            <h5 class="mt-2 mb-0">Baño: revestimiento cerámico</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="remodelacion">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0048.jpg" alt="Detalles de terminación y marcos" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Remodelación</span>
+            <h5 class="mt-2 mb-0">Detalles de terminación</h5>
+          </div>
+        </article>
+      </div>
+
+      <!-- ======= ESTRUCTURAS METÁLICAS ======= -->
+      <!-- Corregido: es una ESCALERA, no techumbre -->
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="metalica">
+        <article class="service-card shadow-sm">
+          <img src="./img/exterior3.jpg" alt="Escalera metálica en montaje" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Estructura metálica</span>
+            <h5 class="mt-2 mb-0">Escalera metálica</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="metalica">
+        <article class="service-card shadow-sm">
+          <img src="./img/exterior6.jpg" alt="Escalera de estructura metálica en taller" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Estructura metálica</span>
+            <h5 class="mt-2 mb-0">Escalera metálica (taller)</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="metalica,civiles">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0054.jpg" alt="Detalle de techumbre metálica" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Estructura metálica</span>
+            <h5 class="mt-2 mb-0">Detalle techumbre</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="metalica">
+        <article class="service-card shadow-sm">
+          <img src="./img/exterior9.jpg" alt="Fabricación de estructura metálica" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Estructura metálica</span>
+            <h5 class="mt-2 mb-0">Fabricación de estructura</h5>
+          </div>
+        </article>
+      </div>
+
+      <!-- ======= PINTURA ======= -->
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="pintura,remodelacion">
+        <article class="service-card shadow-sm">
+          <img src="./img/interior2.jpg" alt="Pintura de interior con terminación fina" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Pintura</span>
+            <h5 class="mt-2 mb-0">Interior y terminaciones</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="pintura">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0052.jpg" alt="Detalle de pared recién pintada" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Pintura</span>
+            <h5 class="mt-2 mb-0">Detalle de acabado</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="pintura">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0050.jpg" alt="Habitación terminada con pintura" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Pintura</span>
+            <h5 class="mt-2 mb-0">Habitación terminada</h5>
+          </div>
+        </article>
+      </div>
+
+      <!-- ======= ALBAÑILERÍA ======= -->
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="albanileria,remodelacion">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0041.jpg" alt="Tabique y estuco en proceso" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Albañilería</span>
+            <h5 class="mt-2 mb-0">Tabique y estuco</h5>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 service-item" data-category="albanileria">
+        <article class="service-card shadow-sm">
+          <img src="./img/IMG-20250812-WA0044.jpg" alt="Tabiques en obra" loading="lazy">
+          <div class="service-overlay">
+            <span class="badge bg-warning text-dark">Albañilería</span>
+            <h5 class="mt-2 mb-0">Tabiques en obra</h5>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL / LIGHTBOX (para ver imágenes en grande) -->
+<div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white" id="imgModalTitle"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img id="imgModalSrc" src="" alt="" class="w-100" style="max-height:80vh; object-fit:contain;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =====================
+     CONTÁCTANOS
+===================== -->
+<section id="contacto" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Contáctanos</h2>
+      <p class="text-muted mb-0">Cuéntanos de tu proyecto y te responderemos a la brevedad.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Columna: Formulario -->
+      <div class="col-lg-6">
+        <div class="p-4 h-100 bg-white shadow-sm rounded">
+          <h5 class="mb-3">Envíanos un mensaje</h5>
+
+          <div class="alert d-none" id="contactAlert" role="alert"></div>
+
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre y apellido*</label>
+              <input type="text" class="form-control" id="name" name="name" required minlength="3">
+              <div class="invalid-feedback">Ingresa tu nombre (mínimo 3 caracteres).</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico*</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="phone" class="form-label">Teléfono (opcional)</label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="+56 9 1234 5678">
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Asunto*</label>
+              <input type="text" class="form-control" id="subject" name="subject" required minlength="3">
+              <div class="invalid-feedback">Indica un asunto.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje*</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required minlength="10"></textarea>
+              <div class="invalid-feedback">Cuéntanos más (mínimo 10 caracteres).</div>
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+              <label class="form-check-label" for="privacy">
+                Acepto que mis datos sean usados para recibir respuesta.
+              </label>
+              <div class="invalid-feedback">Debes aceptar para continuar.</div>
+            </div>
+
+            <button type="submit" id="sendBtn" class="btn btn-dark">
+              <span class="spinner-border spinner-border-sm me-2 d-none" id="btnSpinner"></span>
+              Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Columna: Info + Mapa + Redes -->
+      <div class="col-lg-6">
+        <div class="p-4 h-100 bg-white shadow-sm rounded">
+          <h5 class="mb-3">Información de contacto</h5>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2"><strong>Teléfono:</strong> +56 978313042</li>
+            <li class="mb-2"><strong>Correo:</strong> victorjosecuicas@gmail.com</li>
+            <li class="mb-2"><strong>Horario:</strong> Lun–Vie 9:00 a 18:00</li>
+          </ul>
+<!-- Mapa (Errazuriz 1178, Viña del Mar) -->
+<div class="ratio ratio-16x9 mb-2">
+  <iframe
+    src="https://www.google.com/maps?q=Errazuriz%201178%2C%20Vi%C3%B1a%20del%20Mar&hl=es&z=17&output=embed"
+    style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<p class="small text-muted mb-4">
+  Si no ves el mapa, <a href="https://www.google.com/maps?q=Errazuriz+1178,+Vi%C3%B1a+del+Mar" target="_blank" rel="noopener">ábrelo en Google Maps</a>.
+</p>
+
+          <!-- Redes sociales debajo del mapa -->
+          <h6 class="social-title">También contáctanos por</h6>
+          <div class="social-wrapper">
+            <div class="social-buttons">
+              <a class="social-btn wa" href="https://wa.me/56912345678?text=Hola%20C%26C%20Construcciones" target="_blank" rel="noopener">
+                <i class="bi bi-whatsapp"></i><span>WhatsApp</span>
+              </a>
+              <a class="social-btn ig" href="https://instagram.com/tu_usuario" target="_blank" rel="noopener">
+                <i class="bi bi-instagram"></i><span>Instagram</span>
+              </a>
+              <a class="social-btn tk" href="https://www.tiktok.com/@tu_usuario" target="_blank" rel="noopener">
+                <i class="bi bi-tiktok"></i><span>TikTok</span>
+              </a>
+              <a class="social-btn fb" href="https://facebook.com/tu_pagina" target="_blank" rel="noopener">
+                <i class="bi bi-facebook"></i><span>Facebook</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
